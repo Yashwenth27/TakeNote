@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="2dp"
+        android:layout_margin="1dp"
+        android:background="#00E1FF"
+        android:outlineAmbientShadowColor="@color/purple_200"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="20dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="@color/black"
+        android:outlineAmbientShadowColor="@color/purple_200"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/slno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:text="1."
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="2dp"
+            android:text="Buy tablets from Pharmacy"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/slno"/> <!-- Reference the previous view by id -->
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
